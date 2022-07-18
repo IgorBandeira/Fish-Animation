@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  margin: 0;
+  height: 800px;
+  place-items: start;
+  background-image: url(https://img.freepik.com/vetores-gratis/sob-o-fundo-do-mar-para-videoconferencia_52683-43441.jpg?w=740&t=st=1652825008~exp=1652825608~hmac=97618523cb73f2b7b81245f4818735fb1995181c46767abee780db1ef5cf0fef);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation: swin 5s linear infinite alternate;
+}
+
+body:hover {
+  animation-play-state: paused;
+}
+
+@keyframes swin {
+  0% {
+    transform: translateX(0px);
+  }
+
+  35% {
+    transform: translate(85%, 100px);
+  }
+
+  100% {
+    transform: translateX(calc(100vw - 200px), 0);
+  }
+}
